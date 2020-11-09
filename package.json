@@ -1,0 +1,25 @@
+{
+  "name": "property-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "node-sass": "^5.0.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5"
+  }
+}
