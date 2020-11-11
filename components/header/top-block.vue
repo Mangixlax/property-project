@@ -8,20 +8,61 @@
 			</div>
 			<div class="top-block__lang">
 				<a href="https://aydemirpark.com.tr/ru/login" title="Авторизация для агентов">Для агентов</a>
+				<select data-request="onSwitchLocale" class="top-block-locales" name="locale"><option value="en">English</option><option value="tr">Turkish</option><option value="ru" selected="">Русский</option><option value="fa">فارْسِى</option></select>
 			</div>
 		</div>
 	</div>
 </template>
-<style>
- .top-block__wrapper {
+
+<style scoped lang="scss">
+
+.top-block {
+	 margin: 0 auto;
+	 padding: 0 32px;
+
+ 	&__wrapper {
  	display: flex;
  	justify-content: space-between;
+	padding: 10px;
+	font-size: 10px;
+	font-weight: 600;
+	
+	}
+ 	&__contact {
+ 		display: flex;
+		justify-content: space-between; 
+	}
+ 	&__lang {
+		display: flex;
+		
+	 
+	}
+	&__item {
+		display: inline-block;
+	}
+	::after {
+		content: "";
+		height: 2px;
+		bottom: -2px;
+		left: -16px;
+		right: -16px;
+		display: block;
+		background: rgba(17,17,17,.02);
+	}
+	a{
+		margin-left: 24px;
+		color: rgba(17,17,17,.88);
+		text-decoration: none;
+		font-family: Sourse Sans Pro;
+	}
  }
- .top-block__contact{
- 	display: flex;
- }
- .top-block__lang {
- 	display: flex;
- }
-</style>
 
+ .top-block-locales {
+	padding-right: 12px;
+	margin-left: 16px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+ }
+ 
+</style>

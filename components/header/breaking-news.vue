@@ -4,8 +4,8 @@
 	        <div class="tickercontainer">
 	             <div class="mask">
 	                  <div class="newsticker">
-	                      <span> 
-	                          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dolorem recusandae iusto repellat provident eos porro rerum exercitationem, nesciunt tempora animi impedit magnam laboriosam error possimus perspiciatis dignissimos. Architecto, assumenda.</a> 	                                                    
+	                      <span class="ticlercontainer__mesage"> 
+	                        СКОРО !!! УЖЕ В ЭТОМ ГОДУ, ДВА НОВЫХ ПРОЕКТА: AYLA и BARBAROS . . .СКОРО !!! УЖЕ В ЭТОМ ГОДУ, ДВА НОВЫХ ПРОЕКТА: AYLA и BARBAROS . . .СКОРО !!! УЖЕ В ЭТОМ ГОДУ, ДВА НОВЫХ ПРОЕКТА: AYLA и BARBAROS . . 	                                                    
 	                      </span>
 	                  </div>
 	              </div>
@@ -16,8 +16,17 @@
 
 <style scoped>
 
+.ticlercontainer__mesage{
+	font-family: Source Sans Pro;
+    font-size: 12px;
+    line-height: 32px;
+    font-weight: 800;
+    letter-spacing: .6px;
+
+}
 .breaking-news {
-	height:40px;
+	background: #ffca32;
+	height: 40px;
 	clear:both;
 	position:relative
 }
@@ -49,9 +58,8 @@
 	z-index:1;
 	border-left-width:10px}
 .news-ticker {
-	background: #ffca32;
 	height:40px;
-	line-height:38px;
+	line-height:40px;
 	margin:0;
 	padding:0 2px 0 10px;
 	position:relative;
@@ -60,8 +68,9 @@
 }
 .tickercontainer {
 	height:38px;
-	margin:0;
+	margin:0 auto;
 	padding:0;
+	max-width: 1248px;
 	overflow:hidden
 }
 .tickercontainer .mask {
