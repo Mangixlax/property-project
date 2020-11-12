@@ -18,7 +18,6 @@
 
 .top-block {
 	 margin: 0 auto;
-	 padding: 0 32px;
 
  	&__wrapper {
  	display: flex;
@@ -40,15 +39,7 @@
 	&__item {
 		display: inline-block;
 	}
-	::after {
-		content: "";
-		height: 2px;
-		bottom: -2px;
-		left: -16px;
-		right: -16px;
-		display: block;
-		background: rgba(17,17,17,.02);
-	}
+	
 	a{
 		margin-left: 24px;
 		color: rgba(17,17,17,.88);
@@ -64,5 +55,15 @@
 	outline: none;
 	border: none;
  }
+ 
+ .top-block::after {
+		content: "";
+		height: 2px;
+		bottom: -2px;
+		left: -16px;
+		right: -16px;
+		display: block;
+		background: rgba(17,17,17,.02);
+	}
  
 </style>

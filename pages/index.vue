@@ -2,6 +2,7 @@
   <div>
     <breaking-news/>
     <top-block/>
+    <navbar/>
   </div>
 </template>
 
